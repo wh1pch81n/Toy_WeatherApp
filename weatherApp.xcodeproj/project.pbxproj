@@ -22,6 +22,9 @@
 		7F5DF97A1975D00300A504EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5DF9591975D00200A504EF /* UIKit.framework */; };
 		7F5DF9821975D00300A504EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F5DF9801975D00300A504EF /* InfoPlist.strings */; };
 		7F5DF9841975D00300A504EF /* weatherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DF9831975D00300A504EF /* weatherAppTests.m */; };
+		7F5DF98F1975D16F00A504EF /* WeatherObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DF98E1975D16F00A504EF /* WeatherObject.m */; };
+		7F5DF9921975DD9800A504EF /* WTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DF9911975DD9800A504EF /* WTableViewCell.m */; };
+		7F5DF9941975EE1900A504EF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5DF9931975EE1900A504EF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,11 @@
 		7F5DF97F1975D00300A504EF /* weatherAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "weatherAppTests-Info.plist"; sourceTree = "<group>"; };
 		7F5DF9811975D00300A504EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7F5DF9831975D00300A504EF /* weatherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherAppTests.m; sourceTree = "<group>"; };
+		7F5DF98D1975D16F00A504EF /* WeatherObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherObject.h; sourceTree = "<group>"; };
+		7F5DF98E1975D16F00A504EF /* WeatherObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherObject.m; sourceTree = "<group>"; };
+		7F5DF9901975DD9800A504EF /* WTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTableViewCell.h; sourceTree = "<group>"; };
+		7F5DF9911975DD9800A504EF /* WTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTableViewCell.m; sourceTree = "<group>"; };
+		7F5DF9931975EE1900A504EF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5DF9941975EE1900A504EF /* MapKit.framework in Frameworks */,
 				7F5DF9581975D00200A504EF /* CoreGraphics.framework in Frameworks */,
 				7F5DF95A1975D00200A504EF /* UIKit.framework in Frameworks */,
 				7F5DF9561975D00200A504EF /* Foundation.framework in Frameworks */,
@@ -104,6 +113,7 @@
 		7F5DF9541975D00200A504EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F5DF9931975EE1900A504EF /* MapKit.framework */,
 				7F5DF9551975D00200A504EF /* Foundation.framework */,
 				7F5DF9571975D00200A504EF /* CoreGraphics.framework */,
 				7F5DF9591975D00200A504EF /* UIKit.framework */,
@@ -118,10 +128,14 @@
 				7F5DF9641975D00200A504EF /* AppDelegate.h */,
 				7F5DF9651975D00200A504EF /* AppDelegate.m */,
 				7F5DF9671975D00200A504EF /* Main.storyboard */,
+				7F5DF9901975DD9800A504EF /* WTableViewCell.h */,
+				7F5DF9911975DD9800A504EF /* WTableViewCell.m */,
 				7F5DF96A1975D00200A504EF /* MasterViewController.h */,
 				7F5DF96B1975D00200A504EF /* MasterViewController.m */,
 				7F5DF96D1975D00200A504EF /* DetailViewController.h */,
 				7F5DF96E1975D00200A504EF /* DetailViewController.m */,
+				7F5DF98D1975D16F00A504EF /* WeatherObject.h */,
+				7F5DF98E1975D16F00A504EF /* WeatherObject.m */,
 				7F5DF9701975D00200A504EF /* Images.xcassets */,
 				7F5DF95C1975D00200A504EF /* Supporting Files */,
 			);
@@ -257,6 +271,8 @@
 				7F5DF9661975D00200A504EF /* AppDelegate.m in Sources */,
 				7F5DF96C1975D00200A504EF /* MasterViewController.m in Sources */,
 				7F5DF9621975D00200A504EF /* main.m in Sources */,
+				7F5DF9921975DD9800A504EF /* WTableViewCell.m in Sources */,
+				7F5DF98F1975D16F00A504EF /* WeatherObject.m in Sources */,
 				7F5DF96F1975D00200A504EF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

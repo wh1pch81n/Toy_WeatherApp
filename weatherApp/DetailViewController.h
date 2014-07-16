@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface DetailViewController : UIViewController
+@class WeatherObject;
+@interface DetailViewController : UITableViewController <MKMapViewDelegate, MKAnnotation>
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) WeatherObject *detailItem;
+@property CLLocationCoordinate2D currlocation;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @end
